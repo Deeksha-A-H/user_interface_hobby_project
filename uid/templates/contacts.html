@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/contacts.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <div >
+            <a href="home"><i class="fa fa-arrow-circle-left" style="font-size:38px;color:rgb(182, 13, 13);margin-left:5px;"></i></a>
+        </div>
+        <h2 style="text-align:center;color:rgb(182, 13, 13)">JK Constructions founders and engineers</h2><br><br>
+        <div class="total">
+        <div class="card">
+            <h2 style="color: rgb(182, 13, 13);">Keval H S </h2>
+            <p class="title">Till now totally completed 30 projects related to different sectors like house, commercials, planning and estimation of cups factory, bridge. Major projects in painting tender of DECATHLON, Shimoga and construction of Commercial building, Shimoga</p>
+            <div style="margin: 24px 0;"> 
+              <a href="#"><i class="fa fa-phone"></i></a>  
+              <a href="#"><i class="fa fa-envelope"></i></a>  
+              <a href="#"><i class="fa fa-instagram"></i></a> 
+            </div>
+            <p><button>Rated by clients <i class="fa fa-star"> 5 / 5</i></button></p>
+          </div>
+          <br><br><br>
+
+          <div class="card">
+            <h2 style="color: rgb(182, 13, 13);">Raghu </h2>
+            <p class="title">Till now totally completed 25 projects related to different sectors like house, commercials, planning and estimation of houses, tunnel. Major projects in constructions of houses, Shimoga</p>
+            <div style="margin: 24px 0;"> 
+              <a href="#"><i class="fa fa-phone"></i></a>  
+              <a href="#"><i class="fa fa-envelope"></i></a>  
+              <a href="#"><i class="fa fa-instagram"></i></a> 
+            </div>
+            <p><button>Rated by clients <i class="fa fa-star"> 4.5 / 5</i></button></p>
+          </div>
+          <br><br><br>
+          <div class="card">
+            <h2 style="color: rgb(182, 13, 13);">Yuvraj </h2>
+            <p class="title">Till now totally completed 15 projects related to different sectors like house, commercials. Major projects in construction of Commercial building, Shimoga</p>
+            <div style="margin: 24px 0;"> 
+              <a href="#"><i class="fa fa-phone"></i></a>  
+              <a href="#"><i class="fa fa-envelope"></i></a>  
+              <a href="#"><i class="fa fa-instagram"></i></a> 
+            </div>
+            <p><button>Rated by clients <i class="fa fa-star"> 4 / 5</i></button></p>
+          </div>
+          </div>
+          <br><br><br>
+          <h2 id="h2">Any queries?, drop your EmailId we will reach you soon</h2>
+          <div class="form">
+            <form action="/upload" method="POST" >
+              <table>
+                <tr>
+                  <td>Name:</td>
+                  <td><input type="text" name="name"/></td>
+                </tr>
+                <tr>
+                  <td>Email:</td>
+                  <td><input type="email" name="email"/></td>
+                </tr>
+                <tr>
+                  <td><input type="submit" value="SUBMIT" id="submit"></td>
+                </tr>
+              </table>
+            </form>
+          </div><br><br>
+          <div>
+            <i class="fa fa-arrow-circle-up" style="font-size:48px;color:rgb(182, 13, 13)" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+        </div>
+    </body>
+    <script>
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+</html>

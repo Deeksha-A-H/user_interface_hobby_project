@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/home.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+            <a href="#logo"><img src="static/images/jk.png" class="logo" /></a>
+            </div>
+            <ul class="list-nav" id="list">
+                <li class="list-items">
+                    <a href="#sec">ABOUT</a>
+                </li>
+                <li class="list-items">
+                    <a href="projects">PROJECTS</a>
+                </li>
+                <li class="list-items">
+                    <a href="contacts">CONTACTS</a>
+                </li>
+            </ul>
+            <div class="menu" id="menu">
+                <div class="menu-lines"></div>
+                <div class="menu-lines"></div>
+                <div class="menu-lines"></div>
+            </div>
+        </nav>
+        <div class="igm" id="logo">
+            <img src="static/images/gif.gif" alt="Construction" width="100%" height="595">
+        </div>
+        <div class="text" >
+            <p>WE SOLVE AND SIMPLIFY YOUR <br>
+            MOST COMPLEX CONSTRUCTION CHALLENGES</p>
+        </div>
+        <br><br>
+        <div style="text-align:center;" class="sec" id="sec">
+            <h2 style="color:rgb(99, 8, 8);">WE ARE <span style="background-color:gray">JK CONSTRUCTIONS</span> COMMITTED TO THE SUCCESS OF YOUR PROJECT</h2><br><br>
+            <p class="cont" >JK CONSTRUCTIONS Group’s team, an experienced team of engineers and construction consultant professionals, has the experience, deep expertise, and passion
+            to deliver superior professional services for our clients. We’re an energetic team spread across the Shivamogga, and we take pride in our culture that values attention
+            to detail and delivering exceptional outcomes.</p>
+        </div>
+        <br>
+        <br>
+        <section style="background-color:gray; text-align:center;">
+            <h3 style="font-size :30px;padding-top:20px;">SERVICES</h3><br><br>
+            <p><span style="background-color:rgb(99, 8, 8);color:white;">PLANNING</span> <br><br>
+                <span style="background-color:rgb(99, 8, 8);color:white;">ESTIMATION</span><br><br>
+            <span style="background-color:rgb(99, 8, 8);color:white;">CONSTRUCTIONS</span><br><br><span style="background-color:rgb(99, 8, 8);color:white;">SUPERVISING</span> <br><br><span style="background-color:rgb(99, 8, 8);color:white;">INTERIOR and EXTERIOR DESIGNS</span><br><br></p>
+        </section>
+        <br>
+        
+        <section style="background-color:rgb(51, 50, 50);color:white;height:auto;font-size:18px;">
+            <div>
+                <p style="padding-top:15px;"> 
+                    &copy; jk consulting engineers<br><br>
+                    1st Floor NagaShree Complex, Durgigudi, Shimoga 577205<br><br>
+                    Contact No. : 903536189, 8496093351, 7795596732<br><br><br><br>
+                </p>
+            </div>
+        </section>
+        <div>
+            <i class="fa fa-arrow-circle-up" style="font-size:48px;color:rgb(182, 13, 13)" onclick="topFunction()" id="myBtn" title="Go to top"></i>
+        </div>
+    </body>
+    <script>
+        const x = document.getElementById("menu");
+        const y=document.getElementById("list");
+
+        x.addEventListener('click',()=>{
+            y.classList.toggle('active');
+        })
+
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+</html>

@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Baloo 2', cursive;
+    
+}
+
+.navbar{
+    background-color: rgb(99, 8, 8);
+    color: rgb(199, 199, 199);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+
+.list-nav{
+    list-style-type: none;
+}
+
+.list-nav .list-items{
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(199, 199, 199);
+}
+
+.navbar a:hover{
+    color:burlywood;
+}
+
+.logo{
+    height: 50px;
+    border-radius: 10px;
+}
+
+.menu{
+    display:none;
+}
+
+.menu-lines{
+   width:20px;
+   height: 3px;
+   background-color: white;
+   margin-bottom: 4px;
+}
+
+.igm{
+    
+    overflow-x: hidden;
+    width: 100%;
+    height: 480%;
+    position: relative;
+    object-fit: cover;
+    z-index: -1;
+      
+}
+
+.text{
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+    background-color: rgb(99, 8, 8);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:30px;
+}
+
+.sec{
+    text-align: justify;
+    text-justify: inter-word;
+    
+}
+
+.sec .cont{
+    font-size: 25px;
+}
+.sec h2{
+    font-size: 30px;
+}
+
+section{
+    height: 500px;
+}
+
+p span{
+    padding: 6px;
+    font-size: 25px;
+}
+   
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+
+}
+
+
+@media all and (max-width:940px){
+    .navbar{
+        flex-direction: column;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right:15px;
+        top:15px;
+    }
+    .container{
+        width: 100%;
+    }
+
+    .list-nav .list-items{
+        display: block;
+        padding: 20px 10px;
+        border-top: 1px solid white;
+    }
+
+    .list-nav{
+        width:100%;
+        list-style-type: none;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+
+    .logo{
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .active {
+        display:block;
+    }
+
+    .igm{
+        overflow-x: hidden;
+        width: 100%;
+        height: 280%;
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+    }
+    .text{
+        display: none;
+    }
+
+    .sec{
+        position: relative;
+        top:595px;
+        font-size: 20px;
+    }
+    
+    section{
+        position: relative;
+        top:620px;
+        height: 500px;
+        width:100%;
+    }
+    
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 60px;
+        right: 30px;
+        z-index: 99;
+        cursor: pointer;
+    }
+    
+}
